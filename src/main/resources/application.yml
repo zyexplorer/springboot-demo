@@ -1,0 +1,11 @@
+server:
+  port: 8080
+  address: 0.0.0.0
+  compression:
+    enabled: true
+  tomcat:
+    max-swallow-size: -1
+    remote-ip-header: x-forwarded-for
+    protocol-header: x-forwarded-proto
+  servlet:
+    context-path: /
